@@ -50,19 +50,19 @@ const App = () => {
       },
     })
 
-    // gsap.from('.card', {
-    //   opacity: 0,
-    //   duration: 0.6,
-    //   stagger: 0.6,
-    //   scrollTrigger: {
-    //     trigger: '.card',
-    //     scroller: "body",
-    //     // markers: true,
-    //     start: "top 70%",
-    //     end: "top 75%",
-    //     scrub: 2,
-    //   },
-    // })
+    gsap.from('.card', {
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.6,
+      scrollTrigger: {
+        trigger: '.card',
+        scroller: "body",
+        // markers: true,
+        start: "top 70%",
+        end: "top 75%",
+        scrub: 2,
+      },
+    })
 
     gsap.from("#colon1", {
       y: -70,
