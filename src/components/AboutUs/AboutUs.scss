@@ -1,0 +1,31 @@
+#about-us {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    >img {
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}
+
+#about-us-in {
+    width: 50%;
+    text-align: center;
+
+    >h3 {
+        font-size: 50px;
+        font-weight: var(--weight-semibold);
+        margin-bottom: 40px;
+    }
+    >p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+}

@@ -1,0 +1,97 @@
+// #inspire {
+//     height: 35vh;
+//     width: 100%;
+//     background-color: red;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     z-index: 10; 
+//     >h1{
+//         font-size: 4vw;
+//         position: absolute;
+//         top: -15%;
+//         font-weight: 900;
+//         font-family: gilroy;
+//         color: #000;
+//         -webkit-text-stroke: 2px #fff;
+//     }
+// }
+#inspire {
+    height: 50vh;
+    width: 100%;
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10; 
+    flex-direction: column;
+
+    .h1-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        > h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            font-family: gilroy;
+            color: #000;
+            -webkit-text-stroke: 2px #fff;
+            position: absolute;
+            top: -10%;
+        }
+    }
+}
+
+/* ... rest of the styles ... */
+.elem-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.elem {
+    height: 70%;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 5%;
+    margin: 0 10px;
+    position: relative;
+
+    >h2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #95C11E;
+        font-size: 2rem;
+        color: black;
+        font-weight: 800;
+        position: absolute;
+        z-index: 10;
+
+        &:hover {
+            color: white;
+            background-color: transparent;
+        }
+    }
+
+    >img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all ease 0.5s;
+        scale: 1.1;
+
+        
+    }
+    &:hover img {
+        scale: 1;
+    }
+}

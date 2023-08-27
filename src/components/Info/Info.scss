@@ -1,0 +1,70 @@
+#cards-container {
+    /* background-color: red; */
+    margin-top: 50px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    height: 80%;
+    width: 24%;
+    /* background-color: blue; */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+
+#card1 {
+    background-image: url(../../assets/mBenefits.jpeg);
+}
+
+#card2 {
+    background-image: url(../../assets/recepies.jpeg);
+}
+
+#card3 {
+    background-image: url(../../assets/cooking-tips.jpeg);
+}
+
+#card4 {
+    background-image: url(../../assets/meal-plans.jpeg);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    padding: 10px;
+    padding-top: 10%;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.overlay h4 {
+    color: #000;
+    font-size: 2rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.overlay p {
+    color: #000;
+    font-size: 15px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: rotate3d(-1, 1, 0, 20deg);
+}

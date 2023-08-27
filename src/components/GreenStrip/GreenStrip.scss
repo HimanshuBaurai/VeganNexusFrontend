@@ -1,0 +1,25 @@
+#GreenStrip {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 80px 0;
+    background: linear-gradient(45deg, #f06, #9f6 50%, #f06);
+
+    >h4 {
+        font-size: 1.5rem;
+        color: black;
+        width: 80%;
+    } 
+    >img {
+        height: 80%;
+        width: 14%;  
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;  
+    }
+}
