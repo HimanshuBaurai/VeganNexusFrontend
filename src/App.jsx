@@ -10,12 +10,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {  
   useEffect(() => {
-    gsap.to('#nav', {
+    gsap.to('.navbar', {
       backgroundColor: "#000",
       duration: 0.5,
       height: "80px",
       scrollTrigger: {
-        trigger: "#nav",
+        trigger: ".navbar",
         scroller: "body",
         start: "top -10%",
         end: "top -11%",
@@ -50,23 +50,23 @@ const App = () => {
       },
     })
 
-    gsap.from('.card', {
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.6,
-      scrollTrigger: {
-        trigger: '.card',
-        scroller: "body",
-        // markers: true,
-        start: "top 70%",
-        end: "top 75%",
-        scrub: 2,
-      },
-    })
+    // gsap.from('.card', {
+    //   opacity: 0,
+    //   duration: 0.6,
+    //   stagger: 0.6,
+    //   scrollTrigger: {
+    //     trigger: '.card',
+    //     scroller: "body",
+    //     // markers: true,
+    //     start: "top 70%",
+    //     end: "top 75%",
+    //     scrub: 2,
+    //   },
+    // })
 
     gsap.from("#colon1", {
-      y: -70,
-      x: -70,
+      y: -50,
+      x: -50,
       scrollTrigger: {
         trigger: "#colon1",
         scroller: "body",

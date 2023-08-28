@@ -6,22 +6,22 @@ const Cursor = () => {
         // Get references to cursor elements
         const crsr = document.querySelector('#cursor');
         const crsrB = document.querySelector('#cursor-blur');
-        const h4All = document.querySelectorAll('#nav h4'); 
+        // const h4All = document.querySelectorAll('.nav-link'); 
 
-        h4All.forEach((e) => {
-            e.addEventListener('mouseenter', ()=>{
-                crsr.style.scale=2;
-                crsr.style.border='0.5px solid white';
-                crsr.style.backgroundColor='transparent'
-            });
-        })
-        h4All.forEach((e) => {
-            e.addEventListener('mouseleave', ()=>{
-                crsr.style.scale=1;
-                crsr.style.border='none';
-                crsr.style.backgroundColor='#F86F03';
-            });
-        })
+        // h4All.forEach((e) => {
+        //     e.addEventListener('mouseenter', ()=>{
+        //         crsr.style.scale=2;
+        //         crsr.style.border='0.5px solid white';
+        //         crsr.style.backgroundColor='transparent'
+        //     });
+        // })
+        // h4All.forEach((e) => {
+        //     e.addEventListener('mouseleave', ()=>{
+        //         crsr.style.scale=1;
+        //         crsr.style.border='none';
+        //         crsr.style.backgroundColor='#F86F03';
+        //     });
+        // })
 
         // Mousemove event listener
         const handleMouseMove = (event) => {

@@ -79,6 +79,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  background: #95c11e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+
+  border-radius: 50px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -88,7 +100,7 @@ code {
 /* variables */
 :root {
   /* Colors */
-  --primary-color: #F86F03;
+  --primary-color: #a3d421;
   --secondary-color: #FFA41B;
   --bg-primary: #ffffff;
   --text-color: #222222;
@@ -96,7 +108,7 @@ code {
   --bg-secondary: #000000;
   --card-background: #f4f4f4;
   --bg-secondary-two: #111111;
-  --container-color:#EEEEEE;
+  --container-color: #EEEEEE;
 
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 

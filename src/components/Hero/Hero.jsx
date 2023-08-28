@@ -1,4 +1,3 @@
-// import React, { useEffect, useRef } from 'react'
 import React from 'react'
 import './Hero.scss'
 import Navbar from '../Navbar/Navbar.jsx'
@@ -8,32 +7,13 @@ import Page2 from '../../pages/Page2.jsx'
 import AboutUs from '../AboutUs/AboutUs'
 import Info from '../Info/Info'
 import GreenStrip from '../GreenStrip/GreenStrip.jsx'
-
-// import gsap from 'gsap';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// gsap.registerPlugin(ScrollTrigger)
+ 
 import MustTry from '../MustTry/MustTry.jsx'
 import Inspire from '../Inspire/Inspire.jsx'
 import Footer from '../Footer/Footer.jsx'
 
 
-const Hero = () => {
-    // const mainRef = useRef(null);
-
-    // useEffect(() => {
-    //     // gsap.to('#main', {
-    //     //     backgroundColor: "#000",
-    //     //     scrollTrigger: {
-    //     //         trigger: '#main',
-    //     //         scroller: "body",
-    //     //         // markers: true,
-    //     //         start: "top -25%",
-    //     //         end: "top -70%",
-    //     //         scrub: 2,
-    //     //     },
-    //     // })
-    // }, [])
-
+const Hero = () => {  
     return (
         <>
             <Navbar />

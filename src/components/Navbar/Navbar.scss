@@ -1,24 +1,136 @@
-#nav {
+// #nav {
+//     position: fixed;
+//     height: 100px;
+//     width: 100%;
+//     // background-color: black;
+//     color: white;
+//     display: flex;
+//     align-items: center;
+//     padding: 0 80px;
+//     justify-content: flex-start;
+//     position: fixed;
+//     z-index: 999;
+//     gap: 40px;
+
+//     img {
+//         height: 100px;
+//     }
+
+//     h4 {
+//         font-weight: var(--weight-semibold);
+//         text-transform: uppercase;
+//         cursor: pointer;
+//     }
+// }
+/* Navbar */
+.navbar {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  // background: var(--bg-primary);
+}
+
+.navbar .container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+  height: 80px;
+  width: 100%;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  align-items: center; 
+  // background: var(--bg-primary);
+  // display: none;
+}
+
+.navbar .nav-link {
+  margin: 0 1rem;
+  font-size: 0.8rem;
+  font-weight: var(--weight-semibold);
+  transition: 0.5s ease;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar #logo img {
+  display: block;
+  width: 250px;
+}
+
+.navbar .btn {
+  margin-right: 1.5rem;
+}
+
+.fas.fa-arrow-right {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* hamburger */
+.hamburger {
+  margin-bottom: 0.1rem;
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 23px;
+  height: 3px;
+  margin: 4px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  background-color: white;
+}
+
+@media screen and (max-width:965px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar {
+    &:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  .nav-menu {
     position: fixed;
-    height: 100px;
+    left: -100%; //make it out of sight
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
     width: 100%;
-    // background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 0 80px;
-    justify-content: flex-start;
-    position: fixed;
-    z-index: 999;
-    gap: 40px;
-    
-    >img {
-        height: 100px;
-    }
-    
-    h4{
-        font-weight: var(--weight-semibold);
-        text-transform: uppercase;
-        cursor: pointer;
-    }
+    text-align: center;
+    transition: 0.4s;
+  }
+
+  .nav-link {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
 }

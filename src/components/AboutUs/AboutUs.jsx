@@ -33,7 +33,7 @@ const AboutUs = () => {
             <img src={veg2} alt='vegImg' />
             <div id='about-us-in'>
                 <h3>ABOUT US</h3>
-                <p className='content-text'>Our vision extends beyond just nutritious eating. We believe in a holistic approach that not only promotes personal health but also nurtures the environment and supports animal welfare. Every choice matters.</p>
+                <p >Our vision extends beyond just nutritious eating. We believe in a holistic approach that not only promotes personal health but also nurtures the environment and supports animal welfare. Every choice matters.</p>
             </div>
             <img src={veg1} alt='vegImg' />
         </div>
