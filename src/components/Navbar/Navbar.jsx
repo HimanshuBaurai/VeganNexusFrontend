@@ -40,11 +40,11 @@ const Navbar = () => {
                 </h1>
                 {/* <!-- Navbar links --> */} 
                 <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-                    <li><a className="nav-link" href="#" onClick={toggleMenu}>Recipes</a></li>
-                    <li><a className="nav-link" href="#" onClick={toggleMenu}>Cooking Tips</a></li>
-                    <li><a className="nav-link" href="#" onClick={toggleMenu}>Meal Plans</a></li>
-                    <li><a className="nav-link" href="#" onClick={toggleMenu}>Health Benefits</a></li>
-                    <li><a className="nav-link" href="#" onClick={toggleMenu}>Blog/Articles</a></li>
+                    <li><a className="nav-link" href="https://www.allrecipes.com/gallery/easy-vegan-recipes/" target='_blank' onClick={toggleMenu}>Recipes</a></li>
+                    <li><a className="nav-link" href="https://nutriciously.com/vegan-cooking-tips/" target='_blank' onClick={toggleMenu}>Cooking Tips</a></li>
+                    <li><a className="nav-link" href="https://www.healthline.com/nutrition/vegan-meal-plan" target='_blank' onClick={toggleMenu}>Meal Plans</a></li>
+                    <li><a className="nav-link" href="https://www.healthline.com/nutrition/vegan-diet-benefits" target='_blank' onClick={toggleMenu}>Health Benefits</a></li>
+                    <li><a className="nav-link" href="https://cleangreensimple.com/article/best-vegan-blogs/" target='_blank' onClick={toggleMenu}>Blog/Articles</a></li>
                 </ul>
                 {/* <div class="hamburger"> */}
                 <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
